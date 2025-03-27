@@ -1,10 +1,10 @@
-import Background from "../organisms/Background";
-import Contact from "../organisms/Contact";
-import Experience from "../organisms/Experience";
-import Landing from "../organisms/Landing";
-import NavBar from "../organisms/NavBar";
-import Projects from "../organisms/Projects";
-import Tech from "../organisms/Tech";
+import Background from "./Background"
+import Experience from "./Experience"
+import Projects from "./Projects"
+import Contact from "./Contact"
+import Landing from "./Landing"
+import NavBar from "./NavBar"
+import Tech from "./Tech"
 
 
 export default function Main() {
