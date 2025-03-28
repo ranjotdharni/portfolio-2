@@ -11,7 +11,7 @@ export default function Main() {
 
     return (
         <>
-            <main className="w-full flex flex-col relative">
+            <main className="w-full flex flex-col relative overflow-hidden">
                 <Background />
 
                 <NavBar />

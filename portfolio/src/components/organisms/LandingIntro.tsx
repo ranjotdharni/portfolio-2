@@ -94,7 +94,7 @@ let animationLastName: AnimatedLetterParams[] = [
 export default function LandingIntro() {
 
     return (
-        <div className="w-full h-1/2 p-4 flex flex-col justify-start items-center space-y-2 animate-wiggle">
+        <div className="w-full h-1/2 p-4 flex flex-col justify-start items-center space-y-4">
             <p className="text-color-white font-jbm text-xl w-full text-left">HELLO, MY NAME IS</p>
             <div className="w-full flex flex-row justify-start items-center space-x-4">
                 <div className="flex flex-row justify-start items-center">
@@ -107,6 +107,7 @@ export default function LandingIntro() {
             <p className="text-color-light-grey w-full text-left font-jbm">
                 I'm a full-stack web developer holding a degree in Computer Science. I'm currently looking for a position related to IT or development.
             </p>
+            <button className="bg-color-pink w-full min-h-10 rounded-3xl text-color-white font-jbm">Contact Me</button>
         </div>
     )
 }

@@ -1,10 +1,11 @@
-import { navHeight } from "../../lib/constants/layout";
+import { navHeight } from "../../lib/constants/layout"
 
 
 export default function NavBar() {
+    let css = `w-full absolute z-10 flex flex-row items-center justify-between `
 
     return (
-        <nav className={`w-full absolute bg-opacity-0 z-10 h-[${navHeight}] flex flex-row items-center justify-between`}>
+        <nav className={css} style={{height: navHeight}}>
             <p className="h-full aspect-square text-white font-jbm text-5xl flex flex-col items-center justify-center px-10">RD</p>
 
             <div className="w-4/5 h-full p-4 text-white flex flex-row justify-evenly items-center font-jbm text-xs md:text-lg">
