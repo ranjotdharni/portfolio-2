@@ -6,8 +6,8 @@ export default function AnimatedText(params: AnimatedTextParams) {
     return (
         <>
             {
-                params.text.map(letter => {
-                    return <AnimatedLetter letter={letter.letter} animation={letter.animation} delay={letter.delay} iterations={letter.iterations} tailwind={letter.tailwind} />
+                params.text.map((letter, index) => {
+                    return <AnimatedLetter key={`AnimatedIntroText${index}`} letter={letter.letter} animation={params.animationClass} delay={letter.delay} tailwind={letter.tailwind} />
                 })
             }
         </>
