@@ -5,10 +5,8 @@ export interface BlobContainerParams {
 }
 
 export interface AnimatedLetterParams {
-    animation: string
     letter: string
     delay: string
-    iterations: string
     tailwind: string
 }
 

@@ -1,0 +1,52 @@
+.spin {
+    animation: spin 8s ease-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+        transform: rotate(360deg);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    31.5% {
+        transform: translateY(-15px);  
+    }
+    33% {
+        transform: translateY(0px);
+    }
+    55% {
+        transform: translateY(0px);
+    }
+    56.5% {
+        transform: translateY(-15px);  
+    }
+    58%, 100% {
+        transform: translateY(0px);
+    }
+}
+
+.slowBounce {
+    animation: slowBounce 3.5s linear infinite;
+}
+
+@keyframes slowBounce {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

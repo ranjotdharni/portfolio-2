@@ -1,11 +1,11 @@
 import { AnimatedLetterParams } from "../../lib/types/types"
-
+import '../../styles/animation.css'
 
 export default function AnimatedLetter(params: AnimatedLetterParams) {
-    let css = `animate-${params.animation} ${params.tailwind}`
+    let css = `${params.tailwind}`
 
     return (
-        <p className={`${css}`} style={{animationIterationCount: params.iterations, animationDelay: params.delay}}>
+        <p className={`${css} spin`} style={{animationDelay: params.delay}}>
             {params.letter}
         </p>
     )

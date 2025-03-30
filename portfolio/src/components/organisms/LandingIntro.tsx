@@ -4,44 +4,32 @@ import AnimatedText from "../molecules/AnimatedText";
 let animationFirstName: AnimatedLetterParams[] = [
     {
         letter: 'R',
-        animation: 'spin',
         delay: '200ms',
-        iterations: '1',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'    
     },
     {
         letter: 'A',
-        animation: 'spin',
-        delay: '350ms',
-        iterations: '1',
+        delay: '300ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'N',
-        animation: 'spin',
-        delay: '500ms',
-        iterations: '1',
+        delay: '400ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'J',
-        animation: 'spin',
-        delay: '650ms',
-        iterations: '1',
+        delay: '600ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'O',
-        animation: 'spin',
-        delay: '800ms',
-        iterations: '1',
+        delay: '700ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'T',
-        animation: 'spin',
-        delay: '950ms',
-        iterations: '1',
+        delay: '800ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
 ]
@@ -49,44 +37,32 @@ let animationFirstName: AnimatedLetterParams[] = [
 let animationLastName: AnimatedLetterParams[] = [
     {
         letter: 'D',
-        animation: 'spin',
-        delay: '1100ms',
-        iterations: '1',
+        delay: '900ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'H',
-        animation: 'spin',
-        delay: '1250ms',
-        iterations: '1',
+        delay: '1000ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'A',
-        animation: 'spin',
-        delay: '1400ms',
-        iterations: '1',
+        delay: '1100ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'R',
-        animation: 'spin',
-        delay: '1550ms',
-        iterations: '1',
+        delay: '1200ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'N',
-        animation: 'spin',
-        delay: '1700ms',
-        iterations: '1',
+        delay: '1300ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
     {
         letter: 'I',
-        animation: 'spin',
-        delay: '1850ms',
-        iterations: '1',
+        delay: '1400ms',
         tailwind: 'text-color-pink font-roboto text-3xl md:text-5xl'
     },
 ]
