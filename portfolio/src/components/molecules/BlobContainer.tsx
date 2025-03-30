@@ -1,5 +1,5 @@
-import { BlobContainerParams } from "../../lib/types/types"
-import Blob from "../atoms/Blob"
+import { BlobContainerParams } from '../../lib/types/types'
+import Blob from '../atoms/Blob'
 
 
 export default function BlobContainer(params: BlobContainerParams) {
@@ -7,9 +7,7 @@ export default function BlobContainer(params: BlobContainerParams) {
 
     return (
         <div className={css}>
-            {
-                Blob(params.blob)
-            }
+            <Blob />
         </div>
     )
 }
