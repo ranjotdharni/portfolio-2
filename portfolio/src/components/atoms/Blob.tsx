@@ -1,10 +1,10 @@
-import { BlobParams } from "../../lib/types/types"
+import Blob1 from '../../assets/images/blob1.svg'
 
 
-export default function Blob(params: BlobParams) {
-    let css = `w-full h-full bg-cover bg-center bg-${params.blobId}`   // tailwind doesn't take dynamic strings, this is the workaround
+export default function Blob() {
+    let css = `w-full h-full`
 
     return (
-        <div className={css}></div>
+        <img src={Blob1} className={css} />
     )
 }
