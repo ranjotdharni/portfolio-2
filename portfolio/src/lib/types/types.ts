@@ -7,9 +7,11 @@ export interface BlobContainerParams {
 export interface AnimatedLetterParams {
     letter: string
     delay: string
+    animation: string
     tailwind: string
 }
 
 export interface AnimatedTextParams {
     text: AnimatedLetterParams[]
+    animationClass: string
 }
