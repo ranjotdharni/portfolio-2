@@ -15,7 +15,7 @@ export default function TechBox(params: TechBoxParams) {
                     hidden: { y: '10%', opacity: 0 }
                 }}
             >
-            <h3 className='text-color-white text-4xl font-roboto'>{params.title}</h3>
+            <h3 className='text-color-pink text-4xl font-roboto'>{params.title}</h3>
             {
                 params.items.map((item, index) => {
                     return <TechItem key={`TechItem${index}`} icon={item.icon} title={item.title} textColor={item.textColor} backgroundColor={item.backgroundColor} borderColor={item.borderColor} />

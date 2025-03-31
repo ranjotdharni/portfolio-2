@@ -36,3 +36,16 @@ export interface TechBoxParams {
     animationDelay: number
     items: TechItemParams[]
 }
+
+export interface CarouselCardParams {
+    title: string
+    subtitle: string
+    link: string
+    desc: string
+}
+
+export interface CarouselTrackParams {
+    index: number
+    direction: string
+    current: CarouselCardParams
+}
