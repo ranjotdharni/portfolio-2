@@ -20,4 +20,5 @@ export interface ExperienceBoxParams {
     icon: string
     title: string
     text: string
+    animationDelay: number
 }
