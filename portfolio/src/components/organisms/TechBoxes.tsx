@@ -1,4 +1,4 @@
-import { TechBoxParams, TechItemParams } from '../../lib/types/types'
+import { TechBoxParams } from '../../lib/types/types'
 import TechBox from '../molecules/TechBox'
 
 
@@ -15,72 +15,72 @@ const techData: TechBoxParams[] = [
                 borderColor: '#88dded'
             },
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/fluency/100/typescript--v1.png',
+                title: 'TypeScript',
+                textColor: '#ffffff',
+                backgroundColor: '#3178c6',
+                borderColor: '#ffffff'
             },
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://static.cdnlogo.com/logos/n/80/next-js.svg',
+                title: 'NextJS',
+                textColor: '#000000',
+                backgroundColor: '#ffffff',
+                borderColor: '#000000'
             }
         ]
     },
     {
-        title: 'Client-side',
+        title: 'Server-side',
         animationDelay: 1,
         items: [
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/fluency/100/node-js.png',
+                title: 'NodeJS',
+                textColor: '#6cc24a',
+                backgroundColor: '#215732',
+                borderColor: '#6cc24a'
             },
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-color-tal-revivo.png',
+                title: 'Django',
+                textColor: '#092E20',
+                backgroundColor: '#4c788d',
+                borderColor: '#092E20'
             },
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/external-those-icons-flat-those-icons/100/external-MySQL-programming-and-development-those-icons-flat-those-icons.png',
+                title: 'MySQL',
+                textColor: '#00758f',
+                backgroundColor: '#f29111',
+                borderColor: '#00758f'
             }
         ]
     },
     {
-        title: 'Client-side',
+        title: 'Tools',
         animationDelay: 1.5,
         items: [
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/color/100/docker.png',
+                title: 'Docker',
+                textColor: '#ffffff',
+                backgroundColor: '#1D63ED',
+                borderColor: '#ffffff'
             },
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/color/100/java-coffee-cup-logo--v1.png',
+                title: 'Java',
+                textColor: '#f89820',
+                backgroundColor: '#5382a1',
+                borderColor: '#f89820'
             },
             {
-                icon: 'https://static.cdnlogo.com/logos/r/63/react.svg',
-                title: 'React',
-                textColor: '#88dded',
-                backgroundColor: '#1c2c4c',
-                borderColor: '#88dded'
+                icon: 'https://img.icons8.com/color/100/git.png',
+                title: 'Git',
+                textColor: '#F1502F',
+                backgroundColor: '#3E2C00',
+                borderColor: '#F1502F'
             }
         ]
     }
