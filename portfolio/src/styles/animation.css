@@ -1,3 +1,7 @@
+.scrollWatcher {
+    transition: width linear;
+}
+
 .enterText {
     -webkit-animation: spinIn 0.25s ease-out forwards;
     -webkit-transform: scale(0);
@@ -71,5 +75,18 @@
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+.enterExp {
+    animation: enterExp 1s ease-in-out;
+}
+
+@keyframes enterExp {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 0;
     }
 }
