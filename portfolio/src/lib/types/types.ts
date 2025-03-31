@@ -22,3 +22,17 @@ export interface ExperienceBoxParams {
     text: string
     animationDelay: number
 }
+
+export interface TechItemParams {
+    icon: string
+    title: string
+    textColor: string
+    backgroundColor: string
+    borderColor: string
+}
+
+export interface TechBoxParams {
+    title: string
+    animationDelay: number
+    items: TechItemParams[]
+}

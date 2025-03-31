@@ -1,6 +1,5 @@
 import { ExperienceBoxParams } from '../../lib/types/types'
 import { motion } from 'motion/react'
-import '../../styles/animation.css'
 
 export default function ExperienceBox(params: ExperienceBoxParams) {
 
