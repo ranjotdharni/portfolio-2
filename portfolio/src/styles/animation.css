@@ -77,3 +77,22 @@
         transform: translateY(0px);
     }
 }
+
+.dotRise {
+    transition: top 0.1s linear, background 0.25s linear;
+}
+
+.arrowRise {
+    transform: none;
+    transition: transform 0.1s linear;
+}
+
+.arrowRise:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0px 3px #000000);
+    cursor: pointer;
+}
+
+.arrowRise:active {
+    transform: none;
+}
