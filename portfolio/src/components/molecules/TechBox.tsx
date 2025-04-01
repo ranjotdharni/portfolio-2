@@ -18,7 +18,7 @@ export default function TechBox(params: TechBoxParams) {
             <h3 className='text-color-pink text-4xl font-roboto'>{params.title}</h3>
             {
                 params.items.map((item, index) => {
-                    return <TechItem key={`TechItem${index}`} icon={item.icon} title={item.title} textColor={item.textColor} backgroundColor={item.backgroundColor} borderColor={item.borderColor} />
+                    return <TechItem key={`TechItem${index}`} icon={item.icon} link={item.link} title={item.title} textColor={item.textColor} backgroundColor={item.backgroundColor} borderColor={item.borderColor} />
                 }) 
             }
         </motion.div>

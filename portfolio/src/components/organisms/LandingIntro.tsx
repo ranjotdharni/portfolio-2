@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { AnimatedLetterParams } from "../../lib/types/types";
-import AnimatedText from "../molecules/AnimatedText";
+import { AnimatedLetterParams } from '../../lib/types/types'
+import AnimatedText from '../molecules/AnimatedText'
+import { useEffect, useState } from 'react'
 
-export default function LandingIntro() {
+export default function LandingIntro(params: { quickContact: () => void }) {
 
     const [animation, setAnimation] = useState<string>('enterText')
     const [name, setName] = useState<{firstName: AnimatedLetterParams[], lastName: AnimatedLetterParams[]}>(
@@ -88,7 +88,7 @@ export default function LandingIntro() {
     useEffect(() => {
         function swapAnimation(): number {
             return setTimeout(() => {
-                setAnimation(animation => 'bounceText')
+                setAnimation('bounceText')
             }, 2000)
         }
 
@@ -114,7 +114,7 @@ export default function LandingIntro() {
                 I'm a full-stack web developer holding a Bachelor's degree in Computer Science. I'm currently looking for a position related to IT or development. Scroll further to find out more or click the button below to contact me!
             </p>
             <div className="w-full h-10 md:w-1/2">
-                <button className="bg-color-pink w-full h-full rounded-3xl text-color-white font-jbm md:w-auto md:px-4 md:py-1 md:h-auto md:text-sm">Contact Me</button>
+                <button onClick={params.quickContact} className="bg-color-pink w-full h-full rounded-3xl text-color-white font-jbm md:w-auto md:px-4 md:py-1 md:h-auto md:text-sm">Contact Me</button>
             </div>
         </div>
     )

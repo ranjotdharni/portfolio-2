@@ -16,7 +16,7 @@ export default function ExperienceBox(params: ExperienceBoxParams) {
             >
             <img className='w-1/4 aspect-square' src={params.icon} />
             <h3 className='w-auto h-auto text-2xl font-roboto text-color-pink'>{params.title}</h3>
-            <p className='w-auto h-auto text-sm font-jbm text-color-light-grey text-center md:text-2xl md:text-center'>{params.text}</p>
+            <p className='w-auto h-auto text-sm font-jbm text-color-dark-white text-center md:text-2xl md:text-center'>{params.text}</p>
         </motion.div>
     )
 }

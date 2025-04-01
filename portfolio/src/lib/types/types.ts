@@ -25,6 +25,7 @@ export interface ExperienceBoxParams {
 
 export interface TechItemParams {
     icon: string
+    link: string
     title: string
     textColor: string
     backgroundColor: string
@@ -41,6 +42,7 @@ export interface CarouselCardParams {
     title: string
     subtitle: string
     link: string
+    siteImgIndex: number
     desc: string
 }
 
