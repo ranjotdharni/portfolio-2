@@ -4,6 +4,7 @@ import Experience from "./Experience"
 import Projects from "./Projects"
 import Contact from "./Contact"
 import Landing from "./Landing"
+import Footer from "./Footer"
 import NavBar from "./NavBar"
 import Tech from "./Tech"
 
@@ -51,6 +52,8 @@ export default function Main() {
                 <Tech scrollRef={scrollData[2].scrollRef} />
                 <Projects scrollRef={scrollData[3].scrollRef} />
                 <Contact scrollRef={scrollData[4].scrollRef} />
+                
+                <Footer />
             </main>
         </>
     )
