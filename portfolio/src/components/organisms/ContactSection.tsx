@@ -41,7 +41,7 @@ export default function ContactSection() {
     }
 
     return (
-        <div className='w-full h-auto flex flex-col space-y-4 mx-auto md:flex-row md:space-y-0 md:items-center md:justify-center md:space-x-12'>
+        <div className='w-full h-auto flex flex-col space-y-4 mx-auto md:pt-16 md:flex-row md:space-y-0 md:items-center md:justify-center md:space-x-24'>
             <ContactForm inputs={inputs} changeText={changeText} onSubmit={onSubmit} />
             <ContactGraphic />
         </div>
