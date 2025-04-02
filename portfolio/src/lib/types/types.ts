@@ -2,6 +2,11 @@ import { ChangeEvent, MouseEvent } from 'react'
 
 
 export interface BlobContainerParams {
+    duration: number
+    left: number
+    width: number
+    rotate: number
+    delay: number
     tailwind: string
 }
 

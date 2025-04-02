@@ -5,7 +5,7 @@ export default function ExperienceBox(params: ExperienceBoxParams) {
 
     return (
         <motion.div 
-                className='w-full h-auto space-y-4 p-4 flex flex-col justify-start items-center relative border-2 border-color-bg-contrast shadow-xl rounded-xl md:w-1/4 md:h-[50vh] md:justify-center'
+                className='bgBlur bg-color-bg-transparent w-full h-auto space-y-4 p-4 flex flex-col justify-start items-center relative border-2 border-color-bg-contrast shadow-xl rounded-xl md:w-1/4 md:h-[50vh] md:justify-center'
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.25, delay: params.animationDelay }}

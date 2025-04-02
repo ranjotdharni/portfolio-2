@@ -32,6 +32,7 @@
 
 :root {
   --color-bg: #232121;
+  --color-bg-transparent: #232121aa;
   --color-pink: #cd1787;
   --color-purple: #430a71;
   --color-white: #ebebeb;
@@ -42,4 +43,8 @@
 
 body {
   margin: 0;
+}
+
+.bgBlur {
+  backdrop-filter: blur(15px);
 }

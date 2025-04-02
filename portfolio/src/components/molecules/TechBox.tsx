@@ -6,7 +6,7 @@ import { motion } from 'motion/react'
 export default function TechBox(params: TechBoxParams) {
 
     return (
-        <motion.div className='w-full h-auto flex flex-col items-center space-y-4 p-4 border-2 border-color-bg-contrast shadow-xl rounded-xl'
+        <motion.div className='w-full h-auto flex flex-col items-center space-y-4 p-4 border-2 border-color-bg-contrast shadow-xl rounded-xl bgBlur bg-color-bg-transparent'
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.25, delay: params.animationDelay }}
