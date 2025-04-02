@@ -13,11 +13,11 @@ Scroll through the page to explore the relevant information and links, or use th
 ---
 # Relevant Links
 
-- [Vite][ViteLink]
-- [React][ReactLink]
-- [Tailwind][TailwindLink]
-- [EmailJS][EmailJSLink]
-- [Motion][MotionLink]
+[Vite][ViteLink]  
+[React][ReactLink]  
+[Tailwind][TailwindLink]  
+[EmailJS][EmailJSLink]  
+[Motion][MotionLink]  
 
 [ViteLink]: [https://vite.dev/]
 [ReactLink]: [https://react.dev/]
