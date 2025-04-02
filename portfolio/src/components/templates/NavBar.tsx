@@ -31,7 +31,7 @@ export default function NavBar(params: { currentIndex: number, changeIndex: (ind
             <div className='h-[5px] bg-color-purple scrollWatcher' style={{width: `${scrollPercentage}%`}}></div>
 
             <div className='w-full h-4/5 flex flex-row justify-end md:justify-between items-center'>
-                <p className="h-full aspect-square text-white font-jbm text-5xl flex flex-col items-center justify-center px-10">RD</p>
+                <p className="h-full aspect-square text-color-dark-white font-jbm text-5xl flex flex-col items-center justify-center px-10">RD</p>
 
                 <div className="hidden w-4/5 h-full p-4 flex-row justify-evenly items-center font-jbm text-xs md:flex md:text-lg">
                     {

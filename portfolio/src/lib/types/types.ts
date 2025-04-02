@@ -60,19 +60,25 @@ export interface CarouselTrackParams {
 
 export interface ContactInputParams {
     text: string
-    setText: (event: ChangeEvent<HTMLInputElement>) => void
+    setText: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
     placeholder: string
+    name: string
+    textarea: boolean
     tailwind: string
 }
 
 export interface ContactFormInputParams {
     value: string,
     placeholder: string,
+    name: string,
+    textarea: boolean
     tailwind: string
 }
 
 export interface ContactFormParams {
     inputs: ContactFormInputParams[]
+    message: string
+    ref: React.RefObject<HTMLFormElement | null>
     changeText: (newValue: string, index: number) => void
     onSubmit: (event: MouseEvent<HTMLButtonElement>) => void
 }
