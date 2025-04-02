@@ -11,17 +11,13 @@ Scroll through the page to explore the relevant information and links, or use th
 
 
 ---
-# Relevant Links
+# Relevant Links 
 
-[Vite][ViteLink]  
-[React][ReactLink]  
-[Tailwind][TailwindLink]  
-[EmailJS][EmailJSLink]  
-[Motion][MotionLink]  
+Tailwind: https://tailwindcss.com/  
+EmailJS: https://www.emailjs.com/  
+Motion: https://motion.dev/  
+React: https://react.dev/  
+Vite: https://vite.dev/  
 
-[ViteLink]: [https://vite.dev/]
-[ReactLink]: [https://react.dev/]
-[TailwindLink]: [https://tailwindcss.com/]
-[EmailJSLink]: [https://www.emailjs.com/]
-[MotionLink]: [https://motion.dev/]
+
 [siteLink]: https://ranjotdharni.netlify.app/
