@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 export default function LandingIntro(params: { quickContact: () => void }) {
 
     const [animation, setAnimation] = useState<string>('enterText')
-    const [name, setName] = useState<{firstName: AnimatedLetterParams[], lastName: AnimatedLetterParams[]}>(
+    const [name] = useState<{firstName: AnimatedLetterParams[], lastName: AnimatedLetterParams[]}>(
         {
         firstName: [
             {

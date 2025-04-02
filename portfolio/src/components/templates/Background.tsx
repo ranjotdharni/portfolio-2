@@ -5,7 +5,7 @@ import BlobContainer from '../molecules/BlobContainer'
 import { useState } from 'react'
 
 export default function Background() {
-    const [blobs, setBlobs] = useState<BlobContainerParams[]>(Array(BLOB_COUNT).fill(0))
+    const [blobs] = useState<BlobContainerParams[]>(Array(BLOB_COUNT).fill(0))
 
     return (
         <div className="z-0 w-full h-full absolute bg-color-bg overflow-hidden">
