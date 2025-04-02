@@ -19,9 +19,9 @@ Scroll through the page to explore the relevant information and links, or use th
 - [EmailJS][EmailJSLink]
 - [Motion][MotionLink]
 
-[ViteLink][https://vite.dev/]
-[ReactLink][https://react.dev/]
-[TailwindLink][https://tailwindcss.com/]
-[EmailJSLink][https://www.emailjs.com/]
-[MotionLink][https://motion.dev/]
+[ViteLink]: [https://vite.dev/]
+[ReactLink]: [https://react.dev/]
+[TailwindLink]: [https://tailwindcss.com/]
+[EmailJSLink]: [https://www.emailjs.com/]
+[MotionLink]: [https://motion.dev/]
 [siteLink]: https://ranjotdharni.netlify.app/
