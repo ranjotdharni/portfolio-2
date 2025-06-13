@@ -21,7 +21,8 @@ export default {
         "color-white": "var(--color-white)",
         "color-dark-white": "var(--color-dark-white)",
         "color-light-grey": "var(--color-light-grey)",
-        "color-bg-contrast": "var(--color-bg-contrast)"
+        "color-bg-contrast": "var(--color-bg-contrast)",
+        "color-light-grey-text": "var(--color-light-grey-text)",
       },
       backgroundImage: {
         "blob1": "url('./src/assets/images/blob1.svg')",

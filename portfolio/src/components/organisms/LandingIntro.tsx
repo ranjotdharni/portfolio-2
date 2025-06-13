@@ -110,8 +110,8 @@ export default function LandingIntro(params: { quickContact: () => void }) {
                     <AnimatedText text={name.lastName} animationClass={animation} />
                 </div>
             </div>
-            <p className="text-color-light-grey w-full text-left font-jbm md:w-1/2 md:text-xl">
-                I'm a full-stack web developer holding a Bachelor's degree in Computer Science. I'm currently looking for a position related to IT or development. Scroll further to find out more or click the button below to contact me!
+            <p className="text-color-light-grey-text w-full text-left font-jbm md:w-1/2 md:text-xl">
+                I'm a full-stack web developer holding a Bachelor's degree in Computer Science. I'm currently looking for a position related to IT or development. Use the links above to navigate the site or keep scrolling if you're on mobile to see more of my work!
             </p>
             <div className="w-full h-10 md:w-1/2">
                 <button onClick={params.quickContact} className="bg-color-pink w-full h-full rounded-3xl text-color-white font-jbm md:w-auto md:px-4 md:py-1 md:h-auto md:text-sm">Contact Me</button>

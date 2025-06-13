@@ -32,12 +32,15 @@
 
 :root {
   --color-bg: #232121;
+  --color-bg-dark: #080808;
+  --color-bg-gradient: linear-gradient(0deg,#080808 0%, #232121 50%, #080808 100%);
   --color-bg-transparent: #232121aa;
   --color-pink: #cd1787;
   --color-purple: #430a71;
   --color-white: #ebebeb;
   --color-dark-white: #cecece;
-  --color-light-grey: #aaaaaa;
+  --color-light-grey-text: #aaaaaa;
+  --color-light-grey: #292727;
   --color-bg-contrast: #2d2a2a;
 }
 

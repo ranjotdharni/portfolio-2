@@ -41,20 +41,16 @@ export default function Main() {
     }
 
     return (
-        <>
-            <main className="w-full flex flex-col relative overflow-hidden">
-                <Background />
+        <Background>
+            <NavBar currentIndex={inView} changeIndex={setInView} navData={scrollData} />
 
-                <NavBar currentIndex={inView} changeIndex={setInView} navData={scrollData} />
-
-                <Landing scrollRef={scrollData[0].scrollRef} quickContact={contactMe} />
-                <Experience scrollRef={scrollData[1].scrollRef} quickContact={contactMe} />
-                <Tech scrollRef={scrollData[2].scrollRef} />
-                <Projects scrollRef={scrollData[3].scrollRef} />
-                <Contact scrollRef={scrollData[4].scrollRef} />
-                
-                <Footer />
-            </main>
-        </>
+            <Landing scrollRef={scrollData[0].scrollRef} quickContact={contactMe} />
+            <Experience scrollRef={scrollData[1].scrollRef} quickContact={contactMe} />
+            <Tech scrollRef={scrollData[2].scrollRef} />
+            <Projects scrollRef={scrollData[3].scrollRef} />
+            <Contact scrollRef={scrollData[4].scrollRef} />
+            
+            <Footer />
+        </Background>
     )
 }

@@ -19,7 +19,7 @@ export default function ContactForm(params: ContactFormParams) {
                     return <ContactInput key={`ContactInput${index}`} text={input.value} setText={editText(index)} name={input.name} textarea={input.textarea} placeholder={input.placeholder} tailwind={input.tailwind} />
                 })
             }
-            <div className='w-full h-auto flex flex-col md:flex-row justify-start items-center space-y-4 md:space-x-4'>
+            <div className='w-full h-auto flex flex-col md:flex-row justify-end items-center space-y-4 md:space-x-4'>
                 <button type='submit' onClick={params.onSubmit} className="bg-color-pink w-full rounded-3xl text-color-white font-jbm px-4 py-2 md:w-auto md:px-12 md:py-2 md:h-auto md:text-md">Send</button>
                 <p className='text-color-white font-jbm'>{params.message}</p>
             </div>
