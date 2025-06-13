@@ -5,7 +5,7 @@ import '../../styles/animation.css'
 
 export default function NavBar(params: { currentIndex: number, changeIndex: (index: number) => void, navData: { title: string, scrollRef: React.RefObject<HTMLElement | null>}[] }) {
     const [scrollPercentage, setScrollPercentage] = useState(0)
-    let css = `w-full fixed top-0 z-20 p-0 flex flex-col items-center justify-start ${scrollPercentage !== 0 ? 'bg-color-bg' : ''} border-opacity-100 border-color-bg-contrast ${scrollPercentage !== 0 ? 'border-b-2' : 'border-b-0'}`
+    let css = `w-full fixed top-0 z-20 p-0 flex flex-col items-center justify-start ${scrollPercentage !== 0 ? 'backdrop-blur-md' : ''} border-opacity-100 border-color-bg-contrast ${scrollPercentage !== 0 ? 'border-b-2' : 'border-b-0'}`
 
     function scrollTo(index: number) {
         params.navData[index].scrollRef.current?.scrollIntoView({block: 'center', inline: 'nearest', behavior: 'smooth'})
