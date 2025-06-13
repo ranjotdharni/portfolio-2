@@ -83,7 +83,8 @@ export default function ContactSection() {
 
         emailjs.sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_ID, formRef.current!, import.meta.env.VITE_EMAIL_PUBLIC_KEY).then(() => {
             setMessage('Message Sent')
-        }, () => {
+        }, (error) => {
+            console.log(error)
             setMessage('500 Internal Server Error')
         })
     }
