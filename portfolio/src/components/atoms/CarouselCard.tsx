@@ -1,19 +1,15 @@
-import TileMapGeneratorView from '../../assets/images/tileMapGeneratorView.png'
-import ByteMyCourseView from '../../assets/images/byteMyCoursesView.png'
-import Sac311MobileView from '../../assets/images/sac311MobileView.png'
 import ChemistreamsView from '../../assets/images/chemistreamsView.png'
+import MasqueradesView from '../../assets/images/masqueradesView.png'
 import MeteorizeView from '../../assets/images/meteorizeView.png'
 import HegemonyView from '../../assets/images/hegemonyView.png'
 import { CarouselCardParams } from '../../lib/types/types'
 import VoxylView from '../../assets/images/voxylView.png'
 
 const siteImages: string[] = [
+    MasqueradesView,
     ChemistreamsView,
     HegemonyView,
     VoxylView,
-    ByteMyCourseView,
-    Sac311MobileView,
-    TileMapGeneratorView,
     MeteorizeView
 ]
 

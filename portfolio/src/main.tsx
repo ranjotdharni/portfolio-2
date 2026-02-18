@@ -5,9 +5,6 @@ import App from './pages/App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <head>
-      <meta name="theme-color" content="#080808" />
-    </head>
     <App />
   </StrictMode>,
 )
