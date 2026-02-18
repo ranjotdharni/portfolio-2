@@ -5,52 +5,38 @@ import '../../styles/animation.css'
 
 const projectData: CarouselCardParams[] = [
     {
-        title: 'ChemiStreams',
-        subtitle: 'Realtime Chat Application',
-        link: 'https://chemistreams.vercel.app/login',
+        title: 'Masquerades',
+        subtitle: 'Anonymous Survey Platform',
+        link: 'https://masquerades.netlify.app/',
         siteImgIndex: 0, // See CarouselCard.tsx for reference
+        desc: 'Masquerades is a web-based survey platform. Create surveys, let participants give their feedback, and visually analyze the results using our easy-to-use Statistics Dashboard. Give your customers peace of mind by ensuring their online privacy is preserved.'
+    },
+    {
+        title: 'ChemiStreams',
+        subtitle: 'Real-time Chat Application',
+        link: 'https://chemistreams.vercel.app/',
+        siteImgIndex: 1, // See CarouselCard.tsx for reference
         desc: 'A browser-to-browser messaging service for chatting with your friends in real time. Message your friends, create group chats, and customize your profile to stand out. Share your favorite music and videos with your friends using our Spotify and YouTube embedding features.'
     },
     {
         title: 'Hegemony',
         subtitle: 'Virtual Economy Game',
         link: 'https://hegemony.vercel.app/',
-        siteImgIndex: 1,
+        siteImgIndex: 2,
         desc: 'An idle game that lets you interact with and contribute to a virtual economy in a fantasy-like setting. Invite other players and make friends to build up your wealth. Select an Empire, create Cities, and even start your own States in this browser-based web app!'
     },
     {
         title: 'Voxyl',
         subtitle: 'Project Management Service',
         link: 'https://pitcrew.onrender.com/',
-        siteImgIndex: 2,
-        desc: 'Have a team? Have an idea? Now all you need is a platform to bring the two together. Voxyl is your one stop shop for organizing teams, creating projects, assigning roles, and monitoring performance. Sign up to create your first Team, recruit Members, and assign permissions.'
-    },
-    {
-        title: 'Byte My Courses',
-        subtitle: 'Schoolwork Assistant AI',
-        link: 'https://github.com/timothydn2003/ByteMe',
         siteImgIndex: 3,
-        desc: "Being in school can be tough, especially when pursuing higher education. You have so many responsibilities that sometimes it's hard to keep up. Luckily, this AI service that can take your notes, books, and other files and turn them into short, digestible reports."
-    },
-    {
-        title: 'Sac 311 Mobile',
-        subtitle: 'Customer Service Mobile App',
-        link: 'https://github.com/ranjotdharni/sac-311-mobile',
-        siteImgIndex: 4,
-        desc: "City of Sacramento's 311 mobile service developed on React Native using the Expo framework. Make non-emergency customer service requests as a city resident, visitor, or business all at the click of a button from convenience of your mobile device."
-    },
-    {
-        title: 'Tile Map Maker',
-        subtitle: 'Image Generation Service',
-        link: 'http://159.54.169.148:443/',
-        siteImgIndex: 5,
-        desc: "A powerful procedural generation application designed to create 1920x1080 images of a 2D tile map from a set of basic tile images. Whether you're a developer or a user interested in generating unique visual content, this application provides a seamless experience."
+        desc: 'Have a team? Have an idea? Now all you need is a platform to bring the two together. Voxyl is your one stop shop for organizing teams, creating projects, assigning roles, and monitoring performance. Sign up to create your first Team, recruit Members, and assign permissions.'
     },
     {
         title: 'Meteorize',
         subtitle: 'Real-time Weather Service',
         link: 'https://meteorize.netlify.app',
-        siteImgIndex: 6,
+        siteImgIndex: 4,
         desc: "A simple tool for viewing the current, daily, and weekly forecasts around the world. Search for a location and add them to your weather queue to quickly find their forecast again and again at the click of a button, and all with an easy-to-use user interface."
     }
 ]

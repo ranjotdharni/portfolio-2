@@ -111,7 +111,7 @@ export default function LandingIntro(params: { quickContact: () => void }) {
                 </div>
             </div>
             <p className="text-color-light-grey-text w-full text-left font-jbm md:relative md:left-[8.335%] md:w-2/3 md:text-lg">
-                I'm a full-stack web developer holding a Bachelor's degree in Computer Science. I'm currently looking for a position related to IT or development. Use the links above to navigate the site or keep scrolling if you're on mobile to see more of my work!
+                I'm a full-stack web developer holding a Bachelor's degree in Computer Science. I'm currently looking for a full-time position in the tech industry. Use the links above to navigate the site or scroll further if you're on mobile to see more of my work!
             </p>
             <div className="w-full h-10 md:w-1/2">
                 <button onClick={params.quickContact} className="bg-color-pink w-full h-full rounded-3xl text-color-white font-jbm md:w-auto md:px-4 md:py-1 md:h-auto md:text-sm">Contact Me</button>
