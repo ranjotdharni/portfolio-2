@@ -2,7 +2,7 @@ import { ContactInputParams } from '../../lib/types/types'
 
 
 export default function ContactInput(params: ContactInputParams) {
-    let css = `bg-color-bg-contrast w-full md:w-[30vw] rounded-3xl font-roboto p-4 outline-none ${params.tailwind}`
+    let css = `bg-color-bg-contrast w-full md:w-[30vw] rounded-3xl font-roboto p-4 outline-hidden ${params.tailwind}`
 
     return (
         params.textarea ?

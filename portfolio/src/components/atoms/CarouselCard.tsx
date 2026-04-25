@@ -16,7 +16,7 @@ const siteImages: string[] = [
 export default function CarouselCard(params: CarouselCardParams) {
 
     return (
-        <a href={params.link} target='_blank'  className='w-[80vw] md:w-[35vw] h-[65vh] p-4 space-y-2 md:space-y-4 shadow-xl flex flex-col justify-start items-start bgBlur bg-color-bg-transparent border border-color-light-grey rounded'>
+        <a href={params.link} target='_blank'  className='w-[80vw] md:w-[35vw] h-[65vh] p-4 space-y-2 md:space-y-4 shadow-xl flex flex-col justify-start items-start bgBlur bg-color-bg-transparent border border-color-light-grey rounded-sm'>
             <div className='text-3xl text-color-pink font-jbm'>{params.title}</div>
             <h5 className='text-lg text-color-light-grey-text font-jbmi'>{params.subtitle}</h5>
             <img src={siteImages[params.siteImgIndex]} alt={params.title} />
