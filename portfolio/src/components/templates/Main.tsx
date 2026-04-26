@@ -1,12 +1,11 @@
 import { useRef, useState } from "react"
-import Background from "./Background"
 import Experience from "./Experience"
 import Projects from "./Projects"
 import Contact from "./Contact"
 import Landing from "./Landing"
 import Footer from "./Footer"
-import NavBar from "./NavBar"
 import Tech from "./Tech"
+import PageHeader from "./PageHeader"
 
 
 export default function Main() {
@@ -41,9 +40,8 @@ export default function Main() {
     }
 
     return (
-        <Background>
-            <NavBar currentIndex={inView} changeIndex={setInView} navData={scrollData} />
-
+        <>
+            <PageHeader />
             <Landing scrollRef={scrollData[0].scrollRef} quickContact={contactMe} />
             <Experience scrollRef={scrollData[1].scrollRef} quickContact={contactMe} />
             <Tech scrollRef={scrollData[2].scrollRef} />
@@ -51,6 +49,6 @@ export default function Main() {
             <Contact scrollRef={scrollData[4].scrollRef} />
             
             <Footer />
-        </Background>
+        </>
     )
 }

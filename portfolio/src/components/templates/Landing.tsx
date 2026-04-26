@@ -1,4 +1,3 @@
-import LandingGraphic from '../organisms/LandingGraphic'
 import { navHeight } from '../../lib/constants/layout'
 import LandingIntro from '../organisms/LandingIntro'
 
@@ -9,7 +8,6 @@ export default function Landing(params: { scrollRef: React.RefObject<HTMLElement
     return (
         <section ref={params.scrollRef} className={css}>
             <LandingIntro quickContact={params.quickContact} />
-            <LandingGraphic />
         </section>
     )
 }
