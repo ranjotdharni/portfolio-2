@@ -2,12 +2,12 @@ import { navHeight } from '../../lib/constants/layout'
 import LandingIntro from '../organisms/LandingIntro'
 
 
-export default function Landing(params: { scrollRef: React.RefObject<HTMLElement | null>, quickContact: () => void }) {
+export default function Landing(params: { scrollRef: React.RefObject<HTMLElement | null>, scrollTo: (index: number) => void, quickContact: () => void }) {
     let css = `w-full h-screen z-10 overflow-visible relative top-[${navHeight}] md:top-0 md:flex md:flex-row`
 
     return (
         <section ref={params.scrollRef} className={css}>
-            <LandingIntro quickContact={params.quickContact} />
+            <LandingIntro quickContact={params.quickContact} scrollTo={params.scrollTo} />
         </section>
     )
 }

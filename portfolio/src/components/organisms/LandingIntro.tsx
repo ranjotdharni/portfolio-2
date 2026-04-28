@@ -1,21 +1,22 @@
 import { Button } from '../ui/button'
 import { Separator } from '../ui/separator'
 
-export default function LandingIntro() {
+export default function LandingIntro({ scrollTo, quickContact } : { scrollTo: (index: number) => void, quickContact: () => void }) {
 
     return (
     <section className="flex flex-col lg:items-center lg:justify-center lg:flex-row min-h-screen w-full lg:w-full">
       
-        <div className="flex flex-col justify-center px-8 py-16 lg:w-1/2 lg:px-16 xl:px-36">
+        <div className="flex flex-col justify-start px-8 lg:w-1/2 lg:px-16 xl:px-28">
+            <h1 className='relative bottom-30 font-bold text-primary text-5xl'>Welcome to my Portfolio</h1>
 
-            <div className="space-y-8 w-full">
+            <div className="space-y-6 w-full">
                 <p className="text-xl text-muted-foreground">
                     HELLO, MY NAME IS
                 </p>
 
-                <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
                     Ranjot Dharni
-                </h1>
+                </h2>
 
                 <Separator className="my-2" />
 
@@ -25,8 +26,8 @@ export default function LandingIntro() {
 
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-3 pt-2">
-                    <Button size="lg">Explore</Button>
-                    <Button size="lg" variant="outline">Contact Me</Button>
+                    <Button size="lg" onClick={() => scrollTo(1)}>Explore</Button>
+                    <Button size="lg" variant="outline" onClick={quickContact}>Contact Me</Button>
                 </div>
             </div>
 

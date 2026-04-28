@@ -18,9 +18,15 @@ export default function NavBar() {
               </Button>
             </ButtonGroup>
             <ButtonGroup>
-              <Button variant="outline">GitHub</Button>
-              <Button variant="outline">LinkedIn</Button>
-              <Button variant="outline">Figma</Button>
+              <Button variant="outline" asChild>
+                <a href='https://github.com/ranjotdharni'>GitHub</a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href='https://www.linkedin.com/in/ranjot-dharni-717580269/'>LinkedIn</a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href='https://www.figma.com/design/0qc26uKu4wU1cy3QFeOpU7/311-App-Mock-up--Robby-?node-id=0-1&t=1nJ6OEvN7JDVVc3m-1'>Figma</a>
+              </Button>
             </ButtonGroup>
           </ButtonGroup>
       </header>

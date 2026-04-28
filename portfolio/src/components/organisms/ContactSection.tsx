@@ -1,4 +1,4 @@
-import { ContactFormInputParams } from '../../lib/types/types'
+/*import { ContactFormInputParams } from '../../lib/types/types'
 import ContactGraphic from '../molecules/ContactGraphic'
 import { useState, MouseEvent, useRef } from 'react'
 import ContactForm from '../molecules/ContactForm'
@@ -92,6 +92,18 @@ export default function ContactSection() {
     return (
         <div className='w-full h-auto flex flex-col space-y-4 mx-auto md:pt-16 md:flex-row md:space-y-0 md:items-center md:justify-center md:space-x-24'>
             <ContactForm inputs={inputs} message={message} ref={formRef} changeText={changeText} onSubmit={onSubmit} />
+            <ContactGraphic />
+        </div>
+    )
+}*/
+
+import ContactForm from "../molecules/ContactForm"
+import ContactGraphic from "../molecules/ContactGraphic"
+
+export default function ContactSection() {
+    return (
+        <div className='w-full h-auto flex flex-col space-y-4 mx-auto md:pt-16 md:flex-row md:space-y-0 md:items-center md:justify-center md:space-x-24'>
+            <ContactForm />
             <ContactGraphic />
         </div>
     )

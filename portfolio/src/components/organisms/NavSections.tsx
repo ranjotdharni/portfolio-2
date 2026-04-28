@@ -12,11 +12,14 @@ import {
 export function NavSections
 ({
   items,
+  scrollTo,
 }: {
   items: {
     title: string
     Icon: LucideIcon
-  }[]
+    scrollIndex: number
+  }[],
+  scrollTo: (index: number) => void
 }) {
   return (
     <SidebarGroup>
@@ -25,6 +28,7 @@ export function NavSections
         {items.map((item) => {
           return <SidebarMenuItem
             key={item.title}
+            onClick={() => { scrollTo(item.scrollIndex) }}
           >
             <SidebarMenuButton tooltip={item.title}>
                 {<item.Icon />}
@@ -37,4 +41,3 @@ export function NavSections
     </SidebarGroup>
   )
 }
-

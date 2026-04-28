@@ -18,12 +18,14 @@ import { Button } from "../ui/button"
 
 export function NavHeader({
   projects,
+  viewProjects,
 }: {
   projects: {
     name: string
     logo: React.ElementType
     url: string
-  }[]
+  }[],
+  viewProjects: () => void
 }) {
   const { isMobile } = useSidebar()
 
@@ -55,17 +57,20 @@ export function NavHeader({
               Projects
             </DropdownMenuLabel>
             {
-              projects.map((project, index) => {
+              projects.map((project) => {
                 return (
                   <DropdownMenuItem
                     key={project.name}
                     className="gap-2 p-2"
+                    asChild
                   >
-                    <div className="flex size-6 items-center justify-center rounded-md border">
-                      <project.logo className="size-3.5 shrink-0" />
-                    </div>
-                    { project.name }
-                    <ArrowUpRightIcon />
+                    <a href={project.url} target="_blank">
+                      <div className="flex size-6 items-center justify-center rounded-md border">
+                        <project.logo className="size-3.5 shrink-0" />
+                      </div>
+                      { project.name }
+                      <ArrowUpRightIcon />
+                    </a>
                   </DropdownMenuItem>
                 )
               })
@@ -73,7 +78,7 @@ export function NavHeader({
 
             <DropdownMenuSeparator />
 
-            <Button variant="link">
+            <Button variant="link" onClick={viewProjects}>
                 View All
             </Button>
           </DropdownMenuContent>
@@ -82,4 +87,3 @@ export function NavHeader({
     </SidebarMenu>
   )
 }
-

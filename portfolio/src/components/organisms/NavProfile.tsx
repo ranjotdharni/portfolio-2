@@ -29,8 +29,10 @@ import {
 import PFP from "@/assets/images/pfp.png"
 import { FaLinkedin } from "react-icons/fa6"
 import { FaGithub } from "react-icons/fa"
+import { Button } from "../ui/button"
+import { toggleTheme } from "@/lib/utils/client"
 
-export function NavProfile() {
+export function NavProfile({ contactMe } : { contactMe: () => void }) {
   const { isMobile } = useSidebar()
 
   return (
@@ -73,7 +75,7 @@ export function NavProfile() {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={toggleTheme}>
                 <SunMoonIcon />
                 Toggle Theme
               </DropdownMenuItem>
@@ -81,27 +83,31 @@ export function NavProfile() {
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuItem className="flex flex-row justify-between">
-                <div className="flex flex-row">
+                <a className="flex flex-row" href='https://github.com/ranjotdharni' target="_blank">
                     <FaGithub className="mr-2" />
                     GitHub
-                </div>
+                </a>
                 <ArrowUpRightIcon />
               </DropdownMenuItem>
               <DropdownMenuItem className="flex flex-row justify-between">
-                <div className="flex flex-row">
+                <a className="flex flex-row" href='https://www.linkedin.com/in/ranjot-dharni-717580269/' target="_blank">
                     <FaLinkedin className="mr-2" />
                     LinkedIn
-                </div>
+                </a>
                 <ArrowUpRightIcon />
               </DropdownMenuItem>
               <DropdownMenuItem className="flex flex-row justify-between">
-                <div className="flex flex-row">
+                <a className="flex flex-row" href='https://www.figma.com/design/0qc26uKu4wU1cy3QFeOpU7/311-App-Mock-up--Robby-?node-id=0-1&t=1nJ6OEvN7JDVVc3m-1' target="_blank">
                     <PencilRulerIcon className="mr-2" />
                     Figma
-                </div>
+                </a>
                 <ArrowUpRightIcon />
               </DropdownMenuItem>
             </DropdownMenuGroup>
+            <DropdownMenuSeparator />
+            <div className="w-full px-2 py-1">
+              <Button className="w-full" onClick={contactMe}>Contact Me</Button>
+            </div>
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>

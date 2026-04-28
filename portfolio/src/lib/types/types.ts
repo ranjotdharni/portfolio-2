@@ -33,6 +33,13 @@ export interface TechItemParams {
     icon: string
     link: string
     title: string
+    desc: string
+    projects: {
+        title: string
+        link: string
+        color: string
+    }[]
+
     textColor: string
     backgroundColor: string
     borderColor: string
@@ -48,8 +55,15 @@ export interface CarouselCardParams {
     title: string
     subtitle: string
     link: string
-    siteImgIndex: number
+    src: string
     desc: string
+    codeLink: string
+    usageLink: string
+    reportLink: string
+    badge: {
+        title: string,
+        variant?: "link" | "default" | "secondary" | "destructive" | "outline" | "ghost"
+    }
 }
 
 export interface CarouselTrackParams {

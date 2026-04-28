@@ -27,10 +27,12 @@ export function NavExternals
           return <SidebarMenuItem
             key={item.title}
           >
-            <SidebarMenuButton tooltip={item.title}>
+            <SidebarMenuButton tooltip={item.title} asChild>
+              <a href={item.url} target="_blank">
                 {<item.Icon />}
                 <span>{item.title}</span>
                 <ArrowUpRightIcon className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+              </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
         })}
@@ -38,4 +40,3 @@ export function NavExternals
     </SidebarGroup>
   )
 }
-

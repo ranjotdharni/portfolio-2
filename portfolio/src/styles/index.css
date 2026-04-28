@@ -129,6 +129,7 @@
 body {
   margin: 0;
   background-color: var(--color-bg-dark);
+  overflow-x: hidden;
 }
 
 .bgBlur {

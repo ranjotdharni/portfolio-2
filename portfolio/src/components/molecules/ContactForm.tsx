@@ -1,4 +1,4 @@
-import { ContactFormParams } from '../../lib/types/types'
+/*import { ContactFormParams } from '../../lib/types/types'
 import ContactInput from '../atoms/ContactInput'
 import { ChangeEvent } from 'react'
 
@@ -25,4 +25,69 @@ export default function ContactForm(params: ContactFormParams) {
             </div>
         </form>
     )
+}*/
+
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldSet,
+} from "@/components/ui/field"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "../ui/textarea"
+
+export default function ContactForm() {
+  return (
+    <form className="w-full max-w-sm">
+      <FieldGroup>
+        <div className="grid grid-cols-2 gap-4">
+          <Field>
+            <FieldLabel htmlFor="form-first-name">First Name</FieldLabel>
+            <Input id="form-first-name" type="text" placeholder="Linus" required />
+          </Field>
+          <Field>
+            <FieldLabel htmlFor="form-last-name">Last Name</FieldLabel>
+            <Input id="form-last-name" type="text" placeholder="Torvalds" required />
+          </Field>
+        </div>
+        <Field>
+          <FieldLabel htmlFor="form-email">Email</FieldLabel>
+          <Input id="form-email" type="email" placeholder="linus@example.com" required />
+          <FieldDescription>
+            We'll never share your email with anyone.
+          </FieldDescription>
+        </Field>
+        <Field>
+          <FieldLabel htmlFor="form-phone">Phone Number</FieldLabel>
+          <Input id="form-phone" type="tel" placeholder="+1 (555) 123-4567" />
+          <FieldDescription>
+            Optional
+          </FieldDescription>
+        </Field>
+        <FieldSet>
+            <FieldGroup>
+                <Field>
+                <FieldLabel htmlFor="checkout-7j9-optional-comments">
+                    Message
+                </FieldLabel>
+                <Textarea
+                    id="checkout-7j9-optional-comments"
+                    placeholder="Type your message here."
+                    className="min-h-30"
+                />
+                </Field>
+            </FieldGroup>
+        </FieldSet>
+        <Field orientation="horizontal">
+          <Button type="button" variant="outline">
+            Cancel
+          </Button>
+          <Button type="submit">Submit</Button>
+        </Field>
+      </FieldGroup>
+    </form>
+  )
 }
