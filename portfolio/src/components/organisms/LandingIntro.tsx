@@ -21,7 +21,10 @@ export default function LandingIntro({ scrollTo, quickContact } : { scrollTo: (i
                 <Separator className="my-2" />
 
                 <p className="leading-7 text-muted-foreground">
-                    I'm a full-stack web developer holding a Bachelor's degree in Computer Science. I'm currently looking for a full-time position in the tech industry. Use the links above to navigate the site or scroll further if you're on mobile to see more of my work!
+                    I'm a full-stack web developer holding a Bachelor's degree in Computer Science. 
+                    I'm currently looking for a full-time position in the tech industry. Use the 
+                    sidebar to navigate the site or scroll further if you're on mobile to see 
+                    more of my work!
                 </p>
 
                 {/* Buttons */}
