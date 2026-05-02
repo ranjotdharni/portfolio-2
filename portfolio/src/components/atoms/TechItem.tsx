@@ -42,7 +42,7 @@ export default function TechItem(params: TechItemParams) {
             </CardHeader>
             <CardContent className='flex flex-row items-end flex-wrap p-0 pl-4'>
                     {
-                        params.projects.map(project => {
+                        params.projects.slice(0, 2).map(project => {
                             return (
                                 <Badge variant="outline" className='mr-1 mt-1' asChild>
                                     <a href={project.link} target='_blank'>
@@ -51,6 +51,15 @@ export default function TechItem(params: TechItemParams) {
                                 </Badge>
                             )
                         })
+                    }
+                    {
+                        params.projects.length > 2 
+                        ?
+                        <Badge variant="secondary" className='mr-1 mt-1'>
+                            {`+${params.projects.length - 2} more...`}
+                        </Badge>
+                        :
+                        <></>
                     }
             </CardContent>
             <CardFooter></CardFooter>
