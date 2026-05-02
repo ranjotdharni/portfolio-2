@@ -15,7 +15,7 @@ import { Spinner } from "../ui/spinner"
 
 export default function ContactForm({ ref, isLoading, onSubmit, onCancel, errors, successMessage } : { ref: React.RefObject<HTMLFormElement | null>, isLoading: boolean, onSubmit: (event: SubmitEvent<HTMLFormElement>) => void, onCancel: () => void, errors: { message: string }[], successMessage: string }) {
   return (
-    <form ref={ref} onSubmit={onSubmit} className="w-full max-w-sm">
+    <form ref={ref} onSubmit={onSubmit} className="w-full mx-auto md:mx-0 max-w-sm">
       <FieldGroup>
         <div className="grid grid-cols-2 gap-4">
           <Field>

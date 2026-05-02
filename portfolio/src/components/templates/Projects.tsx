@@ -81,9 +81,9 @@ export default function Projects(params: { scrollRef: React.RefObject<HTMLElemen
     return (
         <section ref={params.scrollRef} className='w-full h-auto pt-16 z-10 space-y-8 bg-opacity-0 flex flex-col items-center'>
             <h2 className='w-auto h-auto text-3xl font-roboto md:text-5xl'>Projects</h2>
-            <p className='text-primary text-xl font-jbm'>Explore some of the projects I've created and contributed to. Use the arrows or swipe on screen to navigate.</p>
+            <p className='text-primary text-xl text-center font-jbm'>Explore some of the projects I've created and contributed to. Use the arrows or swipe on screen to navigate.</p>
             <ProjectCarousel params={projectData} />
-            <p className="rounded-3xl w-full flex flex-row justify-center text-color-light-grey-text font-jbm px-4 py-2 md:w-auto md:px-12 md:py-2 md:h-auto md:text-md">Click or tap anywhere on a project to pause auto-scroll.</p>
+            <p className="rounded-3xl w-full flex flex-row justify-center text-center text-color-light-grey-text font-jbm px-4 py-2 md:w-auto md:px-12 md:py-2 md:h-auto md:text-md">Click or tap anywhere on a project to pause auto-scroll.</p>
         </section>
     )
 }

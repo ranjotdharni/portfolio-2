@@ -36,7 +36,7 @@ export default function LandingIntro({ scrollTo, quickContact } : { scrollTo: (i
 
         </div>
 
-        <div className="flex items-center justify-center lg:h-3/4 lg:w-1/2">
+        <div className="flex items-center justify-center w-5/6 ml-8 aspect-square md:h-3/4 md:w-1/2">
             <iframe src='https://my.spline.design/roomrelaxingcopy-d771332ca2c1b974dd9708b657ea7f99/' width='100%' height='100%'></iframe>
         </div>
 

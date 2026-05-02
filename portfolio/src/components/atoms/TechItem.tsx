@@ -23,7 +23,7 @@ export default function TechItem(params: TechItemParams) {
     )*/
 
     return (
-        <Card className="w-full max-w-sm pb-0">
+        <Card className="w-full max-w-sm ml-0.5 md:ml-0 pb-0">
             <CardHeader>
                 <CardTitle className='flex flex-row items-center'>
                     <figure className='h-7 aspect-square mr-2'>

@@ -49,8 +49,8 @@ export function ExperienceItem({ title, time, company, badgeTailwind } : Experie
 
 export default function ExperienceCard() {
     return (
-        <article className="space-y-6">
-            <header className="w-full flex justify-end text-xl py-2">Experience</header>
+        <article className="mt-6 lg:mt-0 space-y-6">
+            <header className="w-full flex justify-end text-xl lg:py-2">Experience</header>
             {
                 EXPERIENCE_DETAILS.map(item => {
                     return (

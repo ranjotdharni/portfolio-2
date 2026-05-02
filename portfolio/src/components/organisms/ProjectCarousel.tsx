@@ -23,7 +23,7 @@ export default function ProjectCarousel({ params } : { params: CarouselCardParam
             stopOnFocusIn: true,
         }),
       ]}
-      className="w-4/5 py-1"
+      className="w-3/4 md:w-4/5 py-1"
     >
       <CarouselContent>
         {params.map(project => {

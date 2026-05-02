@@ -27,7 +27,7 @@ function LocationDetails() {
 
 export default function LocationCard() {
     return (
-        <article className="w-full">
+        <article className="w-full mt-4 lg:mt-0">
             <header className="w-full flex justify-end text-xl py-2">Location</header>
             <LocationDetails />
         </article>

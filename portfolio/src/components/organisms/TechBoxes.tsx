@@ -185,7 +185,7 @@ const techData: TechItemParams[] = [
 export default function TechBoxes() {
 
     return (
-        <div className='w-full h-auto grid grid-cols-5 gap-4'>
+        <div className='w-full h-auto place-items-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4'>
             {
                 techData.map(tech => {
                     return <TechItem {...tech} />

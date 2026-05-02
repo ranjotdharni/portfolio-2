@@ -107,6 +107,20 @@ export default function TriviaCard() {
         return invalidAnswer && response === answer
     }
 
+    function base64DecodeTrivia(question: TriviaQuestion): TriviaQuestion {
+        question.type = atob(question.type)
+        question.difficulty = atob(question.difficulty)
+        question.category = atob(question.category)
+        question.question = atob(question.question)
+        question.correct_answer = atob(question.correct_answer)
+
+        for (let i = 0; i < 3; i++) {
+            question.incorrect_answers[i] = atob(question.incorrect_answers[i])
+        }
+
+        return question
+    }
+
     async function getTriviaQuestion() {
         setQuestion(undefined)
         setMessage("")
@@ -114,7 +128,7 @@ export default function TriviaCard() {
         setCorrect(false)
         setInvalidAnswer(false)
 
-        const url = `https://opentdb.com/api.php?amount=1&difficulty=${difficulty.toLowerCase()}&type=multiple`
+        const url = `https://opentdb.com/api.php?amount=1&difficulty=${difficulty.toLowerCase()}&type=multiple&encode=base64`
 
         const result: { response_code: number, results: TriviaQuestion[] } = await fetch(url).then(response => response.json())
 
@@ -124,7 +138,7 @@ export default function TriviaCard() {
             return
         }
 
-        const q: TriviaQuestion = result.results[0]
+        const q: TriviaQuestion = base64DecodeTrivia(result.results[0])
 
         q.incorrect_answers.splice(Math.floor(Math.random() * (q.incorrect_answers.length + 1)), 0, q.correct_answer) // unify correct and incorrect answers into one array
         setResponse(q.incorrect_answers[0])
@@ -136,7 +150,7 @@ export default function TriviaCard() {
     }, [])
 
     return (
-        <Card className="w-[30%] justify-evenly">
+        <Card className="w-full mt-12 lg:w-[30%] lg:mt-0 justify-evenly">
             <CardHeader>
                 <CardTitle>Trivia</CardTitle>
                 <CardDescription>Play a Game</CardDescription>
