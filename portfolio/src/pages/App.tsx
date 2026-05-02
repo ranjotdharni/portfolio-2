@@ -49,7 +49,7 @@ function App() {
           var html = document.documentElement
       
           if (theme) {
-              html.classList.add("dark")
+              html.classList.remove("dark")
           }
       }
 
@@ -58,7 +58,7 @@ function App() {
 
   return (
     <TooltipProvider>
-      <SidebarProvider>
+      <SidebarProvider defaultOpen={false}>
         <NavBar scrollRefs={scrollData.map(s => { return s.scrollRef })} contactMe={contactMe} viewProjects={viewProjects} />
         <SidebarInset>
           <Main scrollData={scrollData} scrollTo={scrollTo} contactMe={contactMe} />

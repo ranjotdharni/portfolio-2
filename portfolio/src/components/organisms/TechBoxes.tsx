@@ -1,6 +1,5 @@
-import { TechBoxParams, TechItemParams } from '../../lib/types/types'
+import { TechItemParams } from '../../lib/types/types'
 import TechItem from '../atoms/TechItem'
-import TechBox from '../molecules/TechBox'
 
 const projectData = {
     masquerades: {

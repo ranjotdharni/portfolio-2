@@ -1,4 +1,4 @@
-import { DARK_THEME_NAME, LOCAL_STORAGE_THEME_NAME } from "../constants/layout"
+import { LIGHT_THEME_NAME, LOCAL_STORAGE_THEME_NAME } from "../constants/layout"
 
 export function toggleTheme() {
     const theme = localStorage.getItem(LOCAL_STORAGE_THEME_NAME)
@@ -6,10 +6,10 @@ export function toggleTheme() {
 
     if (theme) {
         localStorage.removeItem(LOCAL_STORAGE_THEME_NAME)
-        html.classList.remove("dark")
+        html.classList.add("dark")
     }
     else {
-        localStorage.setItem(LOCAL_STORAGE_THEME_NAME, DARK_THEME_NAME)
-        html.classList.add("dark")
+        localStorage.setItem(LOCAL_STORAGE_THEME_NAME, LIGHT_THEME_NAME)
+        html.classList.remove("dark")
     }
 }
