@@ -1,7 +1,6 @@
 import { InfoIcon } from "lucide-react"
 import { Badge } from "../ui/badge"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "../ui/hover-card"
+import { Card, CardContent, CardDescription, CardHeader } from "../ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs"
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip"
 

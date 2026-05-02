@@ -1,5 +1,3 @@
-import { MdOutlineDesignServices } from 'react-icons/md'
-import { FaGithub, FaLinkedin } from 'react-icons/fa6'
 import { CreativeCommons } from 'lucide-react'
 
 

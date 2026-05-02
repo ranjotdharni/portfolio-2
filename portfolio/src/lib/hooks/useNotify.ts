@@ -8,9 +8,9 @@ export default function useNotify(initial?: string): [string, (message: string) 
 
         function startTimeout(): number {
             if (timeoutId)
-                clearTimeout(timeoutId)
+                window.clearTimeout(timeoutId)
 
-            return setTimeout(()=> {
+            return window.setTimeout(()=> {
                 timeoutId = undefined
                 setMessage('')
             }, 8000)
@@ -18,7 +18,7 @@ export default function useNotify(initial?: string): [string, (message: string) 
 
         function stopTimeout() {
             if (timeoutId)
-                clearTimeout(timeoutId)
+                window.clearTimeout(timeoutId)
         }
 
         if (message !== '')

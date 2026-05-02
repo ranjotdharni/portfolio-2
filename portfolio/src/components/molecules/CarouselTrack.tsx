@@ -1,6 +1,5 @@
 import { CarouselTrackParams } from '../../lib/types/types'
 import { motion, AnimatePresence } from 'motion/react'
-import CarouselCard from '../atoms/CarouselCard'
 
 const trackVariants = {
     hiddenRight: {
@@ -47,7 +46,6 @@ export default function CarouselTrack(params: CarouselTrackParams) {
                     exit='exit'
                     variants={trackVariants}
                 >
-                <CarouselCard title={params.current.title} subtitle={params.current.subtitle} link={params.current.link} siteImgIndex={params.current.siteImgIndex} desc={params.current.desc} />
             </motion.div>
         </AnimatePresence>
     )
