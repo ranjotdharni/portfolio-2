@@ -31,10 +31,6 @@ const techData: TechItemParams[] = [
             projectData.hegemony,
             projectData.chemistreams,
         ],
-
-        textColor: '#88dded',
-        backgroundColor: '#1c2c4c',
-        borderColor: '#88dded'
     },
     {
         icon: 'https://img.icons8.com/fluency/100/typescript--v1.png',
@@ -44,10 +40,6 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#ffffff',
-        backgroundColor: '#3178c6',
-        borderColor: '#ffffff'
     },
     {
         icon: 'https://static.cdnlogo.com/logos/n/80/next-js.svg',
@@ -57,10 +49,6 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#000000',
-        backgroundColor: '#ffffff',
-        borderColor: '#000000'
     },
     {
         icon: 'https://img.icons8.com/fluency/100/node-js.png',
@@ -70,10 +58,6 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#6cc24a',
-        backgroundColor: '#215732',
-        borderColor: '#6cc24a'
     },
     {
         icon: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-color-tal-revivo.png',
@@ -83,10 +67,6 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#092E20',
-        backgroundColor: '#4c788d',
-        borderColor: '#092E20'
     },
     {
         icon: 'https://img.icons8.com/external-those-icons-flat-those-icons/100/external-MySQL-programming-and-development-those-icons-flat-those-icons.png',
@@ -96,10 +76,6 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#00758f',
-        backgroundColor: '#f29111',
-        borderColor: '#00758f'
     },
     {
         icon: 'https://img.icons8.com/color/100/docker.png',
@@ -109,23 +85,15 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#ffffff',
-        backgroundColor: '#1D63ED',
-        borderColor: '#ffffff'
     },
     {
-        icon: 'https://img.icons8.com/color/100/java-coffee-cup-logo--v1.png',
-        link: 'https://www.java.com/en/',
-        title: 'Java',
-        desc: 'Object-Oriented Programming Language',
+        icon: 'https://img.icons8.com/color/96/figma--v1.png',
+        link: 'https://help.figma.com/hc/en-us/categories/360002051613',
+        title: 'Figma',
+        desc: 'Highly Versatile Graphic Design Tool',
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#f89820',
-        backgroundColor: '#5382a1',
-        borderColor: '#f89820'
     },
     {
         icon: 'https://img.icons8.com/color/100/git.png',
@@ -135,11 +103,52 @@ const techData: TechItemParams[] = [
         projects: [
             projectData.masquerades
         ],
-
-        textColor: '#F1502F',
-        backgroundColor: '#3E2C00',
-        borderColor: '#F1502F'
-    }
+    },
+    {
+        icon: 'https://img.icons8.com/fluency/96/tailwind_css.png',
+        link: 'https://tailwindcss.com/',
+        title: 'Tailwind',
+        desc: 'Efficient CSS Development Framework',
+        projects: [
+            projectData.masquerades
+        ],
+    },
+    {
+        icon: 'https://img.icons8.com/nolan/96/oracle-logo.png',
+        link: 'https://www.oracle.com/cloud/',
+        title: 'Oracle Cloud',
+        desc: 'Highly Scalable Cloud Engineering Platform',
+        projects: [
+            projectData.masquerades
+        ],
+    },
+    {
+        icon: 'https://img.icons8.com/color/96/mongo-db.png',
+        link: 'https://www.mongodb.com/',
+        title: 'Mongo DB',
+        desc: 'Document-Oriented NoSQL Database',
+        projects: [
+            projectData.masquerades
+        ],
+    },
+    {
+        icon: 'https://img.icons8.com/fluency/96/vite.png',
+        link: 'https://vite.dev/',
+        title: 'Vite',
+        desc: 'Well-supported Fast Front End Build Tool',
+        projects: [
+            projectData.masquerades
+        ],
+    },
+    {
+        icon: 'https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png',
+        link: 'https://www.postman.com/',
+        title: 'Postman',
+        desc: 'Leading API Development & Testing Platform',
+        projects: [
+            projectData.masquerades
+        ],
+    },
 ]
 
 export default function TechBoxes() {

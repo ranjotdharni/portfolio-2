@@ -38,10 +38,10 @@ function SkeletonLoader() {
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-4 w-3/4" />
-            <Skeleton className="h-4 w-1/2" />
-            <Skeleton className="h-4 w-1/2" />
-            <Skeleton className="h-4 w-1/2" />
-            <Skeleton className="h-4 w-1/2" />
+            <Skeleton className="h-4 w-1/2 mt-1" />
+            <Skeleton className="h-4 w-1/2 mt-1" />
+            <Skeleton className="h-4 w-1/2 mt-1" />
+            <Skeleton className="h-4 w-1/2 mt-1" />
         </div>
     )
 }
@@ -136,7 +136,7 @@ export default function TriviaCard() {
     }, [])
 
     return (
-        <Card className="w-[30%]">
+        <Card className="w-[30%] justify-evenly">
             <CardHeader>
                 <CardTitle>Trivia</CardTitle>
                 <CardDescription>Play a Game</CardDescription>

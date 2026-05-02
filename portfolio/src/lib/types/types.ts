@@ -39,10 +39,6 @@ export interface TechItemParams {
         link: string
         color: string
     }[]
-
-    textColor: string
-    backgroundColor: string
-    borderColor: string
 }
 
 export interface TechBoxParams {
